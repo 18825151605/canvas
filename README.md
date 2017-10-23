@@ -1,6 +1,16 @@
 # canvas
 # 基于canvas封装的简单球碰撞项目,已经封装好插件
+
+##html
+`  <canvas id="canvas"></canvas> `
+
 ## js实例
+`  var demo1 = new Gameball({ `
+  `  obj: '#canvas',`
+ `   redball: 6,`
+   ` resuch: true,`
+`}) `
+## 参数
 | 参数key       | 值           |
 | ------------- |:-------------:| 
 | 选择器      | #canvas | 
