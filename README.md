@@ -1,6 +1,6 @@
 # canvas
 # 基于canvas封装的简单球碰撞项目,已经封装好插件
-
+## 插件日后有空再完善,gh-page分支有面向过程的js代码
 ## html
 `  <canvas id="canvas"></canvas> `
 
