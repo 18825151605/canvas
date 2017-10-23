@@ -4,9 +4,9 @@
 | 参数key       | 值           |
 | ------------- |:-------------:| 
 | 选择器      | #canvas | 
-| redball      | 6      | 
-| resuch | true     |
-| resuchTime | 3000     |  
+| redball      | 6      |   生成红球数量
+| resuch | true     |       是否重刷新
+| resuchTime | 3000     | 重刷新红球时间间距  默认3000 
 # 链接:https://jackllllll.github.io/canvas/
 # 实际效果
 ![Mou icon](https://github.com/Jackllllll/canvas/blob/master/demo.png)
