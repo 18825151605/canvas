@@ -1,7 +1,7 @@
 # canvas
 # 基于canvas封装的简单球碰撞项目,已经封装好插件
 
-##html
+## html
 `  <canvas id="canvas"></canvas> `
 
 ## js实例
