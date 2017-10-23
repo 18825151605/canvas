@@ -2,7 +2,7 @@ var canvas = document.querySelector('#canvas');
 var w = canvas.width = window.innerWidth;
 var h = canvas.height = window.innerHeight;
 var ctx = canvas.getContext('2d');
-
+var fen = 0;
 //生成红球的数组
 var redArr = [];
 function bornRed(num) {
@@ -28,6 +28,9 @@ function check() {
         getLongArr[i] = Math.sqrt(Math.pow(Math.abs(ballCurY - redArr[i].y), 2) + Math.pow(Math.abs(ballCurX - redArr[i].x), 2));
         if (getLongArr[i] < ball.radius * 2) {  //蓝球碰到红球 把bedball设置为false else true;
             redArr[i].cansee = false;
+            redArr[i].x = 0;
+            redArr[i].y = 0;
+            fen++;
         }
     }
     // console.log(getLong);
@@ -56,6 +59,11 @@ var ball = {
             ctx.fillStyle = this.color;
             ctx.fill();
         }
+        ctx.beginPath();
+        ctx.font = "30px Courier New";
+        ctx.fillStyle = "blue";
+        ctx.fillText(fen, 800 , 50);
+        ctx.closePath();
     }
 };
 
@@ -121,4 +129,14 @@ setInterval(function () {
     }
     check();
     ball.draw(ballCurX, ballCurY);
-}, 10)
+}, 10);
+
+
+setInterval(function () {
+    for (var i = 0; i < redArr.length; i++) {
+        redArr[i].cansee = true;
+        redArr[i].y = parseInt(Math.random() * 100);
+        redArr[i].x = parseInt(Math.random() * 500);
+
+    }
+}, 5000); //刷新页面球
