@@ -21,4 +21,4 @@
 # 链接:https://jackllllll.github.io/canvas/
 
 # 实际效果
-![Mou icon](https://github.com/Jackllllll/canvas/blob/master/demo.png)
+![Mou icon](https://github.com/Jackllllll/canvas/blob/master/demo.gif)
